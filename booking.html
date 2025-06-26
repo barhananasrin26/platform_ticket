@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Booking - Train Ticket</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="navbar">
+    <a href="index.html">Home</a>
+    <a href="login.html">Login</a>
+    <a href="signup.html">Sign Up</a>
+    <a href="booking.html">Book Ticket</a>
+    <a href="payment.html">Payment</a>
+  </div>
+
+  <div class="container">
+    <h2>Book Your Platform Ticket</h2>
+    <form>
+      <div class="form-group">
+        <label for="station">Station Location</label>
+        <select id="station" required>
+          <option value="">Select Station</option>
+          <option value="mumbai">Mumbai Central</option>
+          <option value="delhi">New Delhi</option>
+          <option value="chennai">Chennai Central</option>
+          <option value="kolkata">Kolkata</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="train">Train Name</label>
+        <select id="train" required>
+          <option value="">Select Train</option>
+          <option value="rajdhani">Rajdhani Express</option>
+          <option value="shatabdi">Shatabdi Express</option>
+          <option value="duronto">Duronto Express</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="platform">Platform Number</label>
+        <input type="text" id="platform" required>
+      </div>
+      <button type="submit" onclick="location.href='payment.html'; return false;">Proceed to Payment</button>
+    </form>
+  </div>
+</body>
+</html>
